@@ -4,30 +4,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Music</title>
         <style>
-            .item1 {
-                grid-area: header;
-            }
-            .item2 {
-                grid-area: menu;
-            }
-            .item3 {
-                grid-area: main;
-            }
-            .item4 {
-                grid-area: right;
-            }
-            .item5 {
-                grid-area: footer;
-            }
-
+            /* Common grid container styles */
             .grid-container {
                 display: grid;
-                grid-template-areas: 'header header header header header header' 'menu main main main right right' 'menu footer footer footer footer footer';
+                grid-template-areas: 'header header header header header header' 'menu main main main main main' 'menu footer footer footer footer footer';
                 gap: 10px;
                 background-color: #86898a;
                 padding: 10px;
             }
 
+            /* Grid item styles */
             .grid-container > div {
                 background-color: rgba(255, 255, 255, 0.8);
                 text-align: center;
@@ -36,6 +22,37 @@
                 font-family: Arial;
             }
 
+            /* Media query for smaller screens */
+            @media screen and (max-width: 768px) {
+                .grid-container {
+                    grid-template-areas:'header' 'menu'
+                    /* Adjusted for the menu */
+                    'main' 'footer';
+                }
+
+                /* Adjust styles for better mobile layout */
+                .item1 {
+                    order: 1;
+                    /* Header to display first */
+                }
+                .item2 {
+                    order: 2;
+                    /* Menu to display second */
+                }
+                .item3 {
+                    order: 3;
+                    /* Main content to display third */
+                }
+                .item4 {
+                    order: 4;
+                    /* Footer to display fourth */
+                }
+
+                /* Make all items scale to 100% width */
+                .grid-container > div {
+                    width: 100%;
+                }
+            }
             img {
                 width: 100%;
                 height: auto;
@@ -74,8 +91,7 @@ href="https://open.spotify.com/playlist/5ouUpAHc2CxuohpljOVaDR?si=ad22086f984f4a
 </br>
 <a
 href="https://open.spotify.com/playlist/39leieOVaWY5JCG9vq6OKx?si=e28da9b8dbef4945">Hardstyle playlist for working out</a>
-</div>
-<div class="item4">
+</br>
 <p>My music taste is very broad. Here are some of my favourite genres. I also
 love Pink Floyd and like listening to entire albums at once for the best
 listening experience.</p>
@@ -83,7 +99,8 @@ listening experience.</p>
 src="https://img.ifunny.co/images/666c437d0a23f1206b1d7786a2bbda2066108ef7c3630e960e44754841774007_1.jpg"
 alt="pinkfloydfunny">
 </div>
-<div class="item5">
+
+<div class="item4">
 <p style="font-size: 10px">credits for grid layout: w3schools</p>
 </div>
 </div>
