@@ -4,7 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pictures</title>
         <style>
-            /* Common grid container styles */
             .grid-container {
                 display: grid;
                 grid-template-areas: 'header header header header header header' 'menu main main main main main' 'menu footer footer footer footer footer';
@@ -13,7 +12,6 @@
                 padding: 10px;
             }
 
-            /* Grid item styles */
             .grid-container > div {
                 background-color: rgba(255, 255, 255, 0.8);
                 text-align: center;
@@ -22,37 +20,29 @@
                 font-family: Arial;
             }
 
-            /* Media query for smaller screens */
             @media screen and (max-width: 768px) {
                 .grid-container {
-                    grid-template-areas:'header' 'menu'
-                    /* Adjusted for the menu */
-                    'main' 'footer';
+                    grid-template-areas: 'header' 'menu' 'main' 'footer';
                 }
 
-                /* Adjust styles for better mobile layout */
                 .item1 {
                     order: 1;
-                    /* Header to display first */
                 }
                 .item2 {
                     order: 2;
-                    /* Menu to display second */
                 }
                 .item3 {
                     order: 3;
-                    /* Main content to display third */
                 }
                 .item4 {
                     order: 4;
-                    /* Footer to display fourth */
                 }
 
-                /* Make all items scale to 100% width */
                 .grid-container > div {
                     width: 100%;
                 }
             }
+
             img {
                 width: 100%;
                 height: auto;
