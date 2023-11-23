@@ -4,8 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sports</title>
         <style>
-        /* Common styles for header and flex container */
-        header {
+ /* Common styles for header and flex container */
+ header {
             font-family: Arial;
             text-align: center;
             font-size: 30px;
@@ -13,16 +13,12 @@
         }
         .box {
             display: flex;
-            flex-wrap: wrap; /* Allow flex items to wrap */
-            gap: 10px;
+            flex-direction: column; /* Display items in a column */
             background-color: rgb(228, 255, 232);
             font-family: Arial;
-            justify-content: center; /* Center items horizontally on larger screens */
         }
         /* Styles for individual items */
         .box > div {
-            flex: 1 1 100%; /* Allow items to take full width initially */
-            max-width: calc(50% - 10px); /* Limit item width on larger screens */
             padding: 10px;
             text-align: center; /* Center text within items */
         }
@@ -32,7 +28,14 @@
             display: block; /* Ensure images don't have any residual space around them */
         }
         @media screen and (min-width: 768px) {
+            .box {
+                flex-direction: row; /* Display items in a row on larger screens */
+                flex-wrap: wrap; /* Allow items to wrap */
+                justify-content: center; /* Center items horizontally */
+            }
             .box > div {
+                flex: 1 1 calc(50% - 20px); /* Limit item width on larger screens */
+                max-width: calc(50% - 20px); /* Limit item width on larger screens */
                 text-align: left; /* Align text to the left on larger screens */
             }
         }
@@ -46,13 +49,9 @@
             <div>
                 <p>
                     <a href="https://t0bb3w.github.io">Home</a>
-                </br>
                 <a href="https://t0bb3w.github.io/docs/assets/pages/business.html">Business</a>
-            </br>
             <a href="https://t0bb3w.github.io/docs/assets/pages/sports.html">Sports</a>
-        </br>
         <a href="https://t0bb3w.github.io/docs/assets/pages/music.html">Music</a>
-    </br>
     <a href="https://t0bb3w.github.io/docs/assets/pages/pictures.html">Pictures</a>
 </p>
 </div>
@@ -91,7 +90,9 @@
 </div>
 <div>
 <figure>
-    <img src="https://t0bb3w.github.io/docs/assets/images/gym1.png" alt="Physique">
+    <img 
+    src="https://t0bb3w.github.io/docs/assets/images/gym1.png" 
+    alt="Physique">
     <figcaption>
         Best physique I've ever achieved at the age of 21
     </figcaption>
