@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-<style>
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: footer; }
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            .item1 {
+                grid-area: header;
+            }
+            .item2 {
+                grid-area: menu;
+            }
+            .item3 {
+                grid-area: main;
+            }
+            .item4 {
+                grid-area: footer;
+            }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main main main'
-    'menu footer footer footer footer footer';
-  gap: 10px;
-  background-color: #86898a;
-  padding: 10px;
-}
+            .grid-container {
+                display: grid;
+                grid-template-areas: 'header header header header header header' 'menu main main main main main' 'menu footer footer footer footer footer';
+                gap: 10px;
+                background-color: #86898a;
+                padding: 10px;
+            }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  font-family: Arial;
-}
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
 
-</style>
-</head>
-<body>
-
-<div class="grid-container">
-  <div class="item1">
-    <header>Homepage</header>
-  </div>
-  <div class="item2">
-    <a href="https://t0bb3w.github.io">Home</a></br>
-    <a href="https://t0bb3w.github.io/docs/assets/pages/business.html">Business</a></br>
-    <a href="https://t0bb3w.github.io/docs/assets/pages/sports.html">Sports</a></br>
-    <a href="https://t0bb3w.github.io/docs/assets/pages/music.html">Music</a></br>
-    <a href="https://t0bb3w.github.io/docs/assets/pages/pictures.html">Pictures</a>
-  </div>
-  <div class="item3">
-    <p>Hello, Welcome to my website! Here you can find some of my business ventures, sports I participate in, music I enjoy, and a bunch of pictures taken by me! Click on the menu items on the left to navigate!</p>
-  </div>
-  <div class="item4">
-    <p style="font-size: 10px">credits for grid layout: w3schools</p>
-  </div>
+        <div class="grid-container">
+            <div class="item1">
+                <header>Homepage</header>
+            </div>
+            <div class="item2">
+                <a href="https://t0bb3w.github.io">Home</a>
+            </br>
+            <a href="https://t0bb3w.github.io/docs/assets/pages/business.html">Business</a>
+        </br>
+        <a href="https://t0bb3w.github.io/docs/assets/pages/sports.html">Sports</a>
+    </br>
+    <a href="https://t0bb3w.github.io/docs/assets/pages/music.html">Music</a>
+</br>
+<a href="https://t0bb3w.github.io/docs/assets/pages/pictures.html">Pictures</a>
+</div>
+<div class="item3">
+<p>Hello, Welcome to my website! Here you can find some of my business ventures,
+    sports I participate in, music I enjoy, and a bunch of pictures taken by me!
+    Click on the menu items on the left to navigate!</p>
+</div>
+<div class="item4">
+<p style="font-size: 10px">credits for grid layout: w3schools</p>
+</div>
 </div>
 
 </body>
 </html>
-

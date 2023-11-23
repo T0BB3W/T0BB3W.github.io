@@ -1,65 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music</title>
-<style>
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music</title>
+        <style>
+            .item1 {
+                grid-area: header;
+            }
+            .item2 {
+                grid-area: menu;
+            }
+            .item3 {
+                grid-area: main;
+            }
+            .item4 {
+                grid-area: right;
+            }
+            .item5 {
+                grid-area: footer;
+            }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  gap: 10px;
-  background-color: #86898a;
-  padding: 10px;
-}
+            .grid-container {
+                display: grid;
+                grid-template-areas: 'header header header header header header' 'menu main main main right right' 'menu footer footer footer footer footer';
+                gap: 10px;
+                background-color: #86898a;
+                padding: 10px;
+            }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  font-family: Arial;
-}
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
 
-</style>
-</head>
-<body>
-
-<div class="grid-container">
-  <div class="item1">
-    <header>Music</header>
-  </div>
-  <div class="item2">
-    <a href="https://t0bb3w.github.io">Home</a></br>
-    <a href="https://t0bb3w.github.io/docs/assets/pages/business.html">Business</a></br>
-    <a href="https://t0bb3w.github.io/docs/assets/pages/sports.html">Sports</a></br>
-    <a href="https://t0bb3w.github.io/docs/assets/pages/music.html">Music</a></br>
-    <a href="https://t0bb3w.github.io/docs/assets/pages/pictures.html">Pictures</a>
-  </div>
-  <div class="item3">
-    <p>Some spotify playlists of mine:</p>
-    <a href="https://open.spotify.com/playlist/6IAWJFprboJA1hkbS1aaPK?si=a999cbfaf1d24fb6">Tech-housy playlist for partying</a></br>
-    <a href="https://open.spotify.com/playlist/7anBSYVrdtUFP0UJcu8xae?si=7596b79770084a14">Rock playlist for vibing</a></br>
-    <a href="https://open.spotify.com/playlist/5ouUpAHc2CxuohpljOVaDR?si=ad22086f984f4a4c">Heavy metal playlist for working out</a></br>
-    <a href="https://open.spotify.com/playlist/39leieOVaWY5JCG9vq6OKx?si=e28da9b8dbef4945">Hardstyle playlist for working out</a>
-  </div>  
-  <div class="item4">
-    <p>My music taste is very broad. Here are some of my favourite genres. I also love Pink Floyd and like listening to entire albums at once for the best listening experience.</p>
-    <img src="https://img.ifunny.co/images/666c437d0a23f1206b1d7786a2bbda2066108ef7c3630e960e44754841774007_1.jpg" alt="pinkfloydfunny" width="500px" height="auto">
-  </div>
-  <div class="item5">
-    <p style="font-size: 10px">credits for grid layout: w3schools</p>
-  </div>
+        <div class="grid-container">
+            <div class="item1">
+                <header>Music</header>
+            </div>
+            <div class="item2">
+                <a href="https://t0bb3w.github.io">Home</a>
+            </br>
+            <a href="https://t0bb3w.github.io/docs/assets/pages/business.html">Business</a>
+        </br>
+        <a href="https://t0bb3w.github.io/docs/assets/pages/sports.html">Sports</a>
+    </br>
+    <a href="https://t0bb3w.github.io/docs/assets/pages/music.html">Music</a>
+</br>
+<a href="https://t0bb3w.github.io/docs/assets/pages/pictures.html">Pictures</a>
+</div>
+<div class="item3">
+<p>Some spotify playlists of mine:</p>
+<a
+    href="https://open.spotify.com/playlist/6IAWJFprboJA1hkbS1aaPK?si=a999cbfaf1d24fb6">Tech-housy playlist for partying</a>
+</br>
+<a
+href="https://open.spotify.com/playlist/7anBSYVrdtUFP0UJcu8xae?si=7596b79770084a14">Rock playlist for vibing</a>
+</br>
+<a
+href="https://open.spotify.com/playlist/5ouUpAHc2CxuohpljOVaDR?si=ad22086f984f4a4c">Heavy metal playlist for working out</a>
+</br>
+<a
+href="https://open.spotify.com/playlist/39leieOVaWY5JCG9vq6OKx?si=e28da9b8dbef4945">Hardstyle playlist for working out</a>
+</div>
+<div class="item4">
+<p>My music taste is very broad. Here are some of my favourite genres. I also
+love Pink Floyd and like listening to entire albums at once for the best
+listening experience.</p>
+<img
+src="https://img.ifunny.co/images/666c437d0a23f1206b1d7786a2bbda2066108ef7c3630e960e44754841774007_1.jpg"
+alt="pinkfloydfunny"
+width="500px"
+height="auto">
+</div>
+<div class="item5">
+<p style="font-size: 10px">credits for grid layout: w3schools</p>
+</div>
 </div>
 
 </body>
 </html>
-
