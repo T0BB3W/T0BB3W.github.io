@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sports</title>
         <style>
+        /* Common styles for header and flex container */
         header {
             font-family: Arial;
             text-align: center;
@@ -16,16 +17,24 @@
             gap: 10px;
             background-color: rgb(228, 255, 232);
             font-family: Arial;
+            justify-content: center; /* Center items horizontally on larger screens */
         }
         /* Styles for individual items */
         .box > div {
             flex: 1 1 100%; /* Allow items to take full width initially */
             max-width: calc(50% - 10px); /* Limit item width on larger screens */
             padding: 10px;
+            text-align: center; /* Center text within items */
         }
         img {
-            width: 100%;
+            width: 100%; /* Make images take full width */
             height: auto;
+            display: block; /* Ensure images don't have any residual space around them */
+        }
+        @media screen and (min-width: 768px) {
+            .box > div {
+                text-align: left; /* Align text to the left on larger screens */
+            }
         }
         </style>
     </head>
