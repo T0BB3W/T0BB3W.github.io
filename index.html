@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
 <style>
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item4 { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
+    'menu main main main main main'
     'menu footer footer footer footer footer';
   gap: 10px;
   background-color: #86898a;
@@ -21,10 +21,11 @@
 }
 
 .grid-container > div {
-  background-color: rgba(58, 53, 53, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+  font-family: Arial;
 }
 
 </style>
@@ -44,9 +45,8 @@
   </div>
   <div class="item3">
     <p>Hello, Welcome to my website! Here you can find some fun stuff! Click on the menu items on the left to navigate!</p>
-  </div>  
-  <div class="item4"></div>
-  <div class="item5">credits for grid layout: w3schools</div>
+  </div>
+  <div class="item4">credits for grid layout: w3schools</div>
 </div>
 
 </body>
