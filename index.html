@@ -4,18 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <style>
-            .item1 {
-                grid-area: header;
-            }
-            .item2 {
-                grid-area: menu;
-            }
-            .item3 {
-                grid-area: main;
-            }
-            .item4 {
-                grid-area: footer;
-            }
 
             .grid-container {
                 display: grid;
@@ -32,21 +20,23 @@
                 font-size: 30px;
                 font-family: Arial;
             }
-            .header {
-              width: 100%;
-              float: left;
-            }
-            .menu {
-              width: 16.66%;
-              float: left;
-            }
-            .main {
-              width: 83.33%;
-              float: left;
-            }
-            .footer {
-              width: 83.33%;
-              float: left;
+
+            @media screen and (max-width: 768px) {
+                .grid-container {
+                    grid-template-areas: 'header header header header header header' 'main main main main main main' 'footer footer footer footer footer footer';
+                }
+
+                .item2 {
+                    display: none;
+                }
+
+                .main {
+                    width: 100%;
+                }
+
+                .footer {
+                    width: 100%;
+                }
             }
         </style>
     </head>
@@ -57,25 +47,21 @@
                 <header>Homepage</header>
             </div>
             <div class="item2">
-                <a href="https://t0bb3w.github.io">Home</a>
-            </br>
-            <a href="https://t0bb3w.github.io/docs/assets/pages/business.html">Business</a>
-        </br>
-        <a href="https://t0bb3w.github.io/docs/assets/pages/sports.html">Sports</a>
-    </br>
-    <a href="https://t0bb3w.github.io/docs/assets/pages/music.html">Music</a>
-</br>
-<a href="https://t0bb3w.github.io/docs/assets/pages/pictures.html">Pictures</a>
-</div>
-<div class="item3">
-<p>Hello, Welcome to my website! Here you can find some of my business ventures,
-    sports I participate in, music I enjoy, and a bunch of pictures taken by me!
-    Click on the menu items on the left to navigate!</p>
-</div>
-<div class="item4">
-<p style="font-size: 10px">credits for grid layout: w3schools</p>
-</div>
-</div>
+                <a href="https://t0bb3w.github.io">Home</a><br>
+                <a href="https://t0bb3w.github.io/docs/assets/pages/business.html">Business</a><br>
+                <a href="https://t0bb3w.github.io/docs/assets/pages/sports.html">Sports</a><br>
+                <a href="https://t0bb3w.github.io/docs/assets/pages/music.html">Music</a><br>
+                <a href="https://t0bb3w.github.io/docs/assets/pages/pictures.html">Pictures</a>
+            </div>
+            <div class="item3">
+                <p>Hello, Welcome to my website! Here you can find some of my business ventures,
+                    sports I participate in, music I enjoy, and a bunch of pictures taken by me!
+                    Click on the menu items on the left to navigate!</p>
+            </div>
+            <div class="item4">
+                <p style="font-size: 10px">credits for grid layout: w3schools</p>
+            </div>
+        </div>
 
-</body>
+    </body>
 </html>
