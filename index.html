@@ -4,17 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
+        /* Common grid container styles */
         .grid-container {
             display: grid;
             grid-template-areas:
-                'header'
-                'main'
-                'footer';
+                'header header header header header header'
+                'menu main main main main main'
+                'menu footer footer footer footer footer';
             gap: 10px;
             background-color: #86898a;
             padding: 10px;
         }
 
+        /* Grid item styles */
         .grid-container > div {
             background-color: rgba(255, 255, 255, 0.8);
             text-align: center;
@@ -23,25 +25,31 @@
             font-family: Arial;
         }
 
+        /* Media query for smaller screens */
         @media screen and (max-width: 768px) {
             .grid-container {
                 grid-template-areas:
                     'header'
+                    'menu' /* Adjusted for the menu */
                     'main'
                     'footer';
             }
 
-
+            /* Adjust styles for better mobile layout */
             .item1 {
-                order: 1;
+                order: 1; /* Header to display first */
             }
             .item2 {
-                order: 2;
+                order: 2; /* Menu to display second */
             }
             .item3 {
-                order: 3;
+                order: 3; /* Main content to display third */
+            }
+            .item4 {
+                order: 4; /* Footer to display fourth */
             }
 
+            /* Make all items scale to 100% width */
             .grid-container > div {
                 width: 100%;
             }
@@ -55,9 +63,16 @@
         <header>Homepage</header>
     </div>
     <div class="item2">
-        <p>Hello, Welcome to my website! Here you can find some of my business ventures, sports I participate in, music I enjoy, and a bunch of pictures taken by me! Click on the menu items on the left to navigate!</p>
+        <a href="https://t0bb3w.github.io">Home</a><br>
+        <a href="https://t0bb3w.github.io/docs/assets/pages/business.html">Business</a><br>
+        <a href="https://t0bb3w.github.io/docs/assets/pages/sports.html">Sports</a><br>
+        <a href="https://t0bb3w.github.io/docs/assets/pages/music.html">Music</a><br>
+        <a href="https://t0bb3w.github.io/docs/assets/pages/pictures.html">Pictures</a>
     </div>
     <div class="item3">
+        <p>Hello, Welcome to my website! Here you can find some of my business ventures, sports I participate in, music I enjoy, and a bunch of pictures taken by me! Click on the menu items on the left to navigate!</p>
+    </div>
+    <div class="item4">
         <p style="font-size: 10px">credits for grid layout: w3schools</p>
     </div>
 </div>
