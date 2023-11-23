@@ -4,54 +4,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Business</title>
         <style>
+            html {
+                background-color: rgb(197, 167, 255);
+            }
             header {
                 font-family: Arial;
                 text-align: center;
                 font-size: 30px;
-                background-color: rgb(228, 255, 232);
             }
             .box {
                 display: flex;
                 flex-direction: column;
-                /* Display items in a column */
-                background-color: rgb(228, 255, 232);
                 font-family: Arial;
             }
             .menu-links {
                 text-align: center;
-                /* Center the menu links */
                 font-family: Arial;
-                background-color: rgb(228, 255, 232);
             }
-            /* Styles for individual items */
             .box > div {
                 padding: 10px;
                 text-align: center;
-                /* Center text within items */
             }
             img {
                 width: 100%;
-                /* Make images take full width */
                 height: auto;
                 display: block;
-                /* Ensure images don't have any residual space around them */
             }
             @media screen and (min-width: 768px) {
                 .box {
                     flex-direction: row;
-                    /* Display items in a row on larger screens */
                     flex-wrap: wrap;
-                    /* Allow items to wrap */
                     justify-content: center;
-                    /* Center items horizontally */
                 }
                 .box > div {
                     flex: 1 1 calc(50% - 20px);
-                    /* Limit item width on larger screens */
                     max-width: calc(50% - 20px);
-                    /* Limit item width on larger screens */
                     text-align: left;
-                    /* Align text to the left on larger screens */
                 }
             }
         </style>
