@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #86898a;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(58, 53, 53, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">
+    <header>Tobias Website</header>
+  </div>
+  <div class="item2">Menu</div>
+  <div class="item3">Heres some random stuff.</br>
+  <a href="https://open.spotify.com/playlist/6IAWJFprboJA1hkbS1aaPK?si=a999cbfaf1d24fb6">My spotify playlist!</a></div>  
+  <div class="item4"><img src="https://github.com/T0BB3W/T0BB3W.github.io/blob/main/docs/assets/Koirat.png?raw=true" alt="Toro and Ruut" width="50%" height="auto"></div>
+  <div class="item5">credits for grid layout: w3schools</div>
+</div>
+
+</body>
+</html>
 
