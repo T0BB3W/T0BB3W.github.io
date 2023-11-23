@@ -7,14 +7,13 @@
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item4 { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
+    'menu main main main main main'
     'menu footer footer footer footer footer';
   gap: 10px;
   background-color: #86898a;
@@ -44,10 +43,20 @@
     <a href="https://t0bb3w.github.io/docs/assets/pages/music.html">Music</a></br>
     <a href="https://t0bb3w.github.io/docs/assets/pages/pictures.html">Pictures</a>
   </div>
-  <div class="item3">Heres some random stuff.</br>
-  <a href="https://open.spotify.com/playlist/6IAWJFprboJA1hkbS1aaPK?si=a999cbfaf1d24fb6">My spotify playlist!</a></div>  
-  <div class="item4"></div>
-  <div class="item5">credits for grid layout: w3schools</div>
+  <div class="item3">
+    <p>Here are some pictures!</p>
+    <figure>
+      <img src="https://t0bb3w.github.io/docs/assets/images/koirat.png" alt="Toro & Ruut">
+      <img src="https://t0bb3w.github.io/docs/assets/images/ruutandme.png" alt="Me & Ruut">
+      <img src="https://t0bb3w.github.io/docs/assets/images/toroandme.png" alt="Me & Toro">
+            <figcaption>
+              Pictures of Toro & Ruut (and me)
+            </figcaption>
+          </figure>
+</div>  
+  <div class="item4">
+    <p style="font-size: 10px">credits for grid layout: w3schools</p>
+  </div>
 </div>
 
 </body>
