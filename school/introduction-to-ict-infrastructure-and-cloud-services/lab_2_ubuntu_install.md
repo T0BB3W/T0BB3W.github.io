@@ -1,0 +1,13 @@
+# Ubuntu installation: Reflective Essay
+
+As a novice at best in linux, this lab was both necessary and intriguing, teaching me foundational skills in system administration and file management.
+
+The installation process was straightforward, thanks to VirtualBox’s user-friendly interface. I used the Ubuntu ISO that was already located in the school pc, set up a VM with 4GB RAM, 2 CPU cores, and 20GB storage, and followed the graphical installer to set up the system. Configuring the VM was easy, as the installer guided me through language selection, disk setup, and user creation. Within approximately 20 minutes, I had a functional Ubuntu desktop, which felt rewarding and provided the means to explore linux cli further.
+
+The real learning came during the CLI exercise, where I performed file and directory operations in a terminal. I started by navigating the filesystem with pwd and cd, refreshing my memory on how to move between directories like /home/ubuntu/directory1. Creating test.txt with touch was simple, but my first challenge encountered, was when I tried to cd into directory2, which didn’t exist, resulting in a “No such file or directory” error. This taught me to check directory existence and create one with mkdir. Moving test.txt between directories using mv was initially tricky—I first got an error (mv: cannot stat 'test.txt') because I specified the wrong path, but after correcting it (mv directory1/test.txt directory2), it worked, pinpointing the importance of accurate paths and syntaxing.
+
+Writing to and reading from files was simple and extremely responsive. I used echo "hello world" \> test.txt to write text, then cat test.txt to verify, which felt logical, to see that it worked. Experimenting with printf "asd" \> test.txt introduced me to an alternative to echo, and I appreciated its precision.
+
+Overall, the experience was challenging due to my vague familiarity with Linux CLI, but the errors I faced—like incorrect mv commands or directory navigation—helped me learn through troubleshooting and sparring ai. It was also interesting to see how Linux handles files and directories differently from Windows, which I’m used to. I gained new skills in virtualization (setting up a VM), basic Linux commands (pwd, cd, mkdir, touch, mv, cat, echo, printf), and error handling. This exercise gave some fundamentals in Linux administration, and I look forward to learning more advanced commands and scripting in the future.
+
+<img src="media/image1.jpeg" style="width:4.69078in;height:3.51667in" /><img src="media/image2.jpeg" style="width:4.67966in;height:3.50833in" /><img src="media/image3.jpeg" style="width:4.9909in;height:3.74167in" /><img src="media/image4.jpeg" style="width:5.075in;height:3.80472in" />
