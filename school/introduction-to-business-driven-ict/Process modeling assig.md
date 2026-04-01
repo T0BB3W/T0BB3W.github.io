@@ -1,5 +1,4 @@
-# From Lead to Won Opportunity<img src="media/image1.png" style="width:6.88958in;height:1.15347in" alt="A white rectangular object with a black border AI-generated content may be incorrect." />.<img src="media/image2.png" style="width:6.88958in;height:3.93403in" alt="A screenshot of a computer screen AI-generated content may be incorrect." /><img src="media/image3.png" style="width:4.27834in;height:4.23392in" alt="A screenshot of a computer AI-generated content may be incorrect." />.<img src="media/image4.png" style="width:6.88958in;height:2.60139in" alt="A screenshot of a computer AI-generated content may be incorrect." /><img src="media/image5.png" style="width:6.88958in;height:2.76181in" alt="A screenshot of a computer AI-generated content may be incorrect." />
-
+# From Lead to Won Opportunity
 # Process Description
 
 Roles in sales:
@@ -28,7 +27,7 @@ Decisions made during the sales process:
 
 - Closing
 
-> Decisions in system config:
+Decisions in system config:
 
 - Field customization
 
@@ -38,10 +37,7 @@ Decisions made during the sales process:
 
 - Product configuration
 
-<img src="media/image6.png" style="width:4.86526in;height:6.37589in" alt="A diagram of a process AI-generated content may be incorrect." />
-
-# Order to Cash Process<img src="media/image7.png" style="width:6.88958in;height:2.76875in" alt="A screenshot of a computer AI-generated content may be incorrect." />.<img src="media/image8.png" style="width:6.88958in;height:2.91389in" alt="A screenshot of a computer AI-generated content may be incorrect." />.<img src="media/image9.png" style="width:6.88958in;height:2.38125in" alt="A screenshot of a computer AI-generated content may be incorrect." /><img src="media/image10.png" style="width:6.88958in;height:3.03958in" alt="A screenshot of a computer AI-generated content may be incorrect." />.<img src="media/image11.png" style="width:6.88958in;height:3.30347in" alt="A computer screen shot of a computer screen AI-generated content may be incorrect." />
-
+# Order to Cash Process
 # Process Description
 
 Roles in the Order to Cash Process:
@@ -84,11 +80,6 @@ Decision making in system configuration:
 
 - Document flow customization
 
-<img src="media/image12.png" style="width:4.76108in;height:5.83415in" alt="A diagram of a customer service AI-generated content may be incorrect." />
-
-# Reporting Sales
-
-# <img src="media/image13.png" style="width:6.88958in;height:4.19722in" alt="A screenshot of a graph" />
 
 # Business Questions
 
